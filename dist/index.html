@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="flex items-center justify-center bg-blue-300 min-h-screen">
+    <div class="w-full max-w-lg bg-slate-50 rounded-xl p-7">
+      <header class="text-4xl font-semibold text-center">
+        QUOTE OF THE DAY  !!
+      </header>
+      <div class="mt-8 mb-8">
+        <div class="flex justify-center" id="quoteText">
+          <span class="text-2xl text-center break-words"
+            >Your quote goes here</span
+          >
+        </div>
+        <div class="flex justify-end italic mt-5 text-2xl">~ Rzz</div>
+      </div>
+      <div
+        class="flex items-center mt-5 justify-between border-t border-solid border-gray-700 pt-5"
+      >
+        <ul class="flex list-none m-0 pl-3 p-0 space-x-5 cursor-pointer">
+          <li class="sound">
+            <i class="fas fa-volume-up"></i>
+          </li>
+          <li class="copy"><i class="fas fa-copy"></i></li>
+        </ul>
+        <button
+          id="quotebutton"
+          class="px-4 py-2 bg-blue-500 text-white border-none outline-none cursor-pointer rounded-3xl hover:bg-blue-300 hover:text-black"
+        >
+          New Quote
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
