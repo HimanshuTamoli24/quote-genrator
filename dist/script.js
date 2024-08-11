@@ -9,7 +9,7 @@ function randomQuote() {
         .then(res => res.json())
         .then(result => {
             quoteTextElement.textContent = result.content;
-            // quoteAuthorElement.textContent = `~ ${result.author}`;
+            quoteAuthorElement.textContent = `~ ${result.author}`;
         })
         .catch(error => console.log("Error fetching quote:", error));
 }
